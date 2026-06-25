@@ -31,7 +31,7 @@ jobs:
     name: Call reusable workflow with deploy true
 
     # Only run on upstream repository.
-    if: ${{ github.repository == 'NCAR/CAM' }}
+    if: ${{ github.repository == 'samsrabin/cam-doc-deploy-tests' }}
 
     uses: ./.github/workflows/docs-build_to_publish-optionally-deploy.yml
     with:
